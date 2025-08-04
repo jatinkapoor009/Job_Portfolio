@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jatin Kapoor - Cloud & DevOps Engineer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="https://fav.farm/🧑‍💻" />
+  <style>
+    .cover-screen {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100vw; height: 100vh;
+      background: linear-gradient(to right, #141e30, #243b55);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      text-align: center;
+      transition: opacity 1s ease;
+    }
+    .cover-screen.fade-out {
+      opacity: 0;
+      pointer-events: none;
+    }
+    .cover-button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: white;
+      color: #141e30;
+      font-weight: bold;
+      font-size: 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .cover-button:hover {
+      background-color: #eaeaea;
+      transform: scale(1.05);
+    }
+    .highlight {
+      color: #00ffff;
+    }
+  </style>
+</head>
+<body>
+  <!-- Cover Greeting Page -->
+  <div class="cover-screen" id="coverScreen">
+    <h1>👋 Welcome!</h1>
+    <h2>I'm <span class="highlight">Jatin Kapoor</span></h2>
+    <p>Cloud & DevOps Engineer</p>
+    <button class="cover-button" onclick="enterSite()">Enter Portfolio</button>
+  </div>
+
+  <header>
+    <div class="container">
+      <h1>Jatin Kapoor</h1>
+      <p id="typing"></p>
+      <button onclick="toggleDarkMode()" class="toggle-btn">🌙 Toggle Theme</button>
+    </div>
+  </header>
+
+  <section class="about reveal">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>I am a motivated and detail-oriented Cloud & DevOps Engineer with a strong foundation in deploying, automating, and maintaining cloud infrastructure. As a fresher, I have hands-on experience through personal and guided projects using AWS, Jenkins, Docker, Terraform, Git, and Linux. I enjoy solving real-world problems with automation and scalable solutions. My goal is to contribute to fast-paced teams by delivering robust DevOps solutions and continuously learning new tools and technologies.</p>
+    </div>
+  </section>
+
+  <section class="skills reveal">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="skill"><p>AWS</p><div class="bar"><div style="width: 80%;">80%</div></div></div>
+      <div class="skill"><p>Linux</p><div class="bar"><div style="width: 85%;">85%</div></div></div>
+      <div class="skill"><p>Jenkins</p><div class="bar"><div style="width: 80%;">80%</div></div></div>
+      <div class="skill"><p>Docker</p><div class="bar"><div style="width: 70%;">70%</div></div></div>
+      <div class="skill"><p>Terraform</p><div class="bar"><div style="width: 50%;">50%</div></div></div>
+	  <div class="skill"><p>Kubernetes</p><div class="bar"><div style="width: 50%;">50%</div></div></div>
+    </div>
+  </section>
+
+  <section class="certifications reveal">
+    <div class="container">
+      <h2>Certifications</h2>
+      <ul>
+        <li>AWS Certified Cloud Practitioner – In Progress</li>
+        <li>Linux Foundation – DevOps Essentials</li>
+        <li>Coursera – Docker for Beginners</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="projects reveal">
+    <div class="container">
+      <h2>Projects</h2>
+
+      <div class="project">
+        <h3>1. CI/CD Pipeline on AWS</h3>
+        <p>Designed and implemented a Jenkins CI/CD pipeline to automate the build, test, and deployment process of a Node.js application hosted on an AWS EC2 instance. Integrated GitHub as the source repository and Docker for containerization, ensuring continuous integration and smooth application rollout.</p>
+        <a href="https://github.com/jatinkapoor009/cicd_repo" target="_blank">🔗 http://github.com/jatinkapoor009/cicd_repo</a>
+      </div>
+
+      <div class="project">
+        <h3>2. Terraform Infra Setup</h3>
+        <p>Created reusable and scalable infrastructure on AWS using Terraform. Configured EC2 instances, S3 buckets, and IAM roles through code to promote consistency and efficiency in managing cloud resources.</p>
+        <a href="https://github.com/jatinkapoor009" target="_blank">🔗 http://github.com/jatinkapoor009</a>
+      </div>
+
+      <div class="project">
+        <h3>3. Monitoring with CloudWatch</h3>
+        <p>Set up AWS CloudWatch to monitor application logs and generate alerts based on defined thresholds. Enhanced visibility and proactive issue detection for applications running on EC2 instances.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact reveal">
+  <div class="container">
+    <h2>Contact</h2>
+	<p>Mobile: <a href="tel:+919599741970">+91 9599741970</a></p>
+    <p>Email: <a href="mailto:jatink9599@gmial.com">jatink9599@gmial.com</a></p>
+    <p>GitHub: <a href="https://github.com/jatinkapoor009" class="toast-link" target="_blank">github.com/jatinkapoor009</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/jatin-kapoor1/" class="toast-link" target="_blank">linkedin.com/in/jatin-kapoor1</a></p>
+    <button onclick="downloadResume()" class="download-btn">📄 Download Resume</button>
+  </div>
+</section>
+
+
+  <footer>
+    <p>&copy; 2025 Jatin Kapoor | Cloud & DevOps Engineer</p>
+  </footer>
+
+  <div id="toast" class="toast">Link clicked!</div>
+
+  <script>
+    function enterSite() {
+      document.getElementById("coverScreen").classList.add("fade-out");
+    }
+  </script>
+
+  <script src="script.js"></script>
+</body>
+</html>
