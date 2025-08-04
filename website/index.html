@@ -6,59 +6,13 @@
   <title>Jatin Kapoor - Cloud & DevOps Engineer</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="https://fav.farm/🧑‍💻" />
-  <style>
-    .cover-screen {
-      position: fixed;
-      top: 0; left: 0;
-      width: 100vw; height: 100vh;
-      background: linear-gradient(to right, #141e30, #243b55);
-      color: white;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      z-index: 9999;
-      text-align: center;
-      transition: opacity 1s ease;
-    }
-    .cover-screen.fade-out {
-      opacity: 0;
-      pointer-events: none;
-    }
-    .cover-button {
-      margin-top: 20px;
-      padding: 10px 20px;
-      background-color: white;
-      color: #141e30;
-      font-weight: bold;
-      font-size: 1rem;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-    .cover-button:hover {
-      background-color: #eaeaea;
-      transform: scale(1.05);
-    }
-    .highlight {
-      color: #00ffff;
-    }
-  </style>
 </head>
 <body>
-  <!-- Cover Greeting Page -->
-  <div class="cover-screen" id="coverScreen">
-    <h1>👋 Welcome!</h1>
-    <h2>I'm <span class="highlight">Jatin Kapoor</span></h2>
-    <p>Cloud & DevOps Engineer</p>
-    <button class="cover-button" onclick="enterSite()">Enter Portfolio</button>
-  </div>
 
   <header>
     <div class="container">
       <h1>Jatin Kapoor</h1>
       <p id="typing"></p>
-      <button onclick="toggleDarkMode()" class="toggle-btn">🌙 Toggle Theme</button>
     </div>
   </header>
 
@@ -77,7 +31,7 @@
       <div class="skill"><p>Jenkins</p><div class="bar"><div style="width: 80%;">80%</div></div></div>
       <div class="skill"><p>Docker</p><div class="bar"><div style="width: 70%;">70%</div></div></div>
       <div class="skill"><p>Terraform</p><div class="bar"><div style="width: 50%;">50%</div></div></div>
-	  <div class="skill"><p>Kubernetes</p><div class="bar"><div style="width: 50%;">50%</div></div></div>
+      <div class="skill"><p>Kubernetes</p><div class="bar"><div style="width: 50%;">50%</div></div></div>
     </div>
   </section>
 
@@ -116,28 +70,21 @@
   </section>
 
   <section class="contact reveal">
-  <div class="container">
-    <h2>Contact</h2>
-	<p>Mobile: <a href="tel:+919599741970">+91 9599741970</a></p>
-    <p>Email: <a href="mailto:jatink9599@gmial.com">jatink9599@gmial.com</a></p>
-    <p>GitHub: <a href="https://github.com/jatinkapoor009" class="toast-link" target="_blank">github.com/jatinkapoor009</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/jatin-kapoor1/" class="toast-link" target="_blank">linkedin.com/in/jatin-kapoor1</a></p>
-    <button onclick="downloadResume()" class="download-btn">📄 Download Resume</button>
-  </div>
-</section>
-
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Mobile: <a href="tel:+919599741970">+91 9599741970</a></p>
+      <p>Email: <a href="mailto:jatink9599@gmial.com">jatink9599@gmial.com</a></p>
+      <p>GitHub: <a href="https://github.com/jatinkapoor009" class="toast-link" target="_blank">github.com/jatinkapoor009</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/jatin-kapoor1/" class="toast-link" target="_blank">linkedin.com/in/jatin-kapoor1</a></p>
+      <button onclick="downloadResume()" class="download-btn">📄 Download Resume</button>
+    </div>
+  </section>
 
   <footer>
     <p>&copy; 2025 Jatin Kapoor | Cloud & DevOps Engineer</p>
   </footer>
 
   <div id="toast" class="toast">Link clicked!</div>
-
-  <script>
-    function enterSite() {
-      document.getElementById("coverScreen").classList.add("fade-out");
-    }
-  </script>
 
   <script src="script.js"></script>
 </body>
