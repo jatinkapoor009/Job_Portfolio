@@ -6,7 +6,6 @@
   <title>Jatin Kapoor - Cloud & DevOps Engineer</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="https://fav.farm/🧑‍💻" />
-  <!-- Fallback favicon -->
   <link rel="alternate icon" href="https://fav.farm/favicon.ico" />
 </head>
 <body>
@@ -44,6 +43,7 @@
         <li>AWS Certified Cloud Practitioner – In Progress</li>
         <li>Linux Foundation – DevOps Essentials</li>
         <li>Coursera – Docker for Beginners</li>
+        <li>Internship – DevOps Intern at CloudDevOpsHub, MARCh 2025 – August 2025</li>
       </ul>
     </div>
   </section>
@@ -88,7 +88,19 @@
 
   <div id="toast" class="toast">Link clicked!</div>
 
+  <!-- Resume download function -->
+  <script>
+    function downloadResume() {
+      const link = document.createElement('a');
+      link.href = 'Jatin Kapoor_Cloud+DevOps_resume.pdf'; // Make sure this file exists in the same folder
+      link.download = 'Jatin Kapoor_Cloud+DevOps_resume.pdf';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
+  </script>
+
   <script src="script.js"></script>
-   Deployment last tested on: 4 Aug 2025 
+  Deployment last tested on: 6 Aug 2025 
 </body>
 </html>
